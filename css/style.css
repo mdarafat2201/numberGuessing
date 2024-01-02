@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.Player1Input{
+    padding: 10px 30px;
+}
+
+.gameStart{
+    padding: 10px 30px;
+    margin-top: 10px;
+    ca
+}
