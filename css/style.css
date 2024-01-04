@@ -2,16 +2,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
 }
 
-.Player1Input{
-    padding: 10px 30px;
+.Player1Input {
+  padding: 10px 30px;
 }
 
-.gameStart{
-    padding: 10px 30px;
-    margin-top: 10px;
-    ca
+.gameStart {
+  padding: 10px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.playertowbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+.Player2Input {
+  padding: 10px 30px;
+}
+
+.guess {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
 }
