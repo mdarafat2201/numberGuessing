@@ -14,21 +14,15 @@
   margin-top: 10px;
   cursor: pointer;
 }
-.playertowbox {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: none;
-}
 
 .Player2Input {
   padding: 10px 30px;
+  display: none;
 }
 
 .guess {
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
+  display: none;
 }
