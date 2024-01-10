@@ -6,6 +6,7 @@ const gameStart = document.querySelector(".gameStart");
 //player tow markup refercence
 const Player2Input = document.querySelector(".Player2Input");
 const guess = document.querySelector(".guess");
+const playertwoerroe = document.querySelector(".playertwoerroe");
 let playeronevalue = 0;
 let chance = 4;
 gameStart.addEventListener("click", function () {
@@ -24,7 +25,7 @@ gameStart.addEventListener("click", function () {
     gameStart.style.display = "none";
     // visible all markup in player tow
     Player1.style.display = "block";
-    Player1.innerHTML = "player 2";
+    Player1.innerHTML = `player 2 <br/> you have ${chance} chances `;
     Player2Input.style.display = "block";
     guess.style.display = "block";
   } else {
@@ -32,6 +33,7 @@ gameStart.addEventListener("click", function () {
     error.style.color = "red";
   }
 });
+
 //guessign player one number
 guess.addEventListener("click", function () {
   if (
@@ -40,11 +42,14 @@ guess.addEventListener("click", function () {
     Player2Input <= 10
   ) {
     chance--;
-    error.innerHTML = `your guess is  wrong and  you have chance ${chance}`;
-    error.style.color = "green";
+    playertwoerroe.innerHTML = `your guess is  wrong and  you have chance ${chance}`;
+    playertwoerroe.style.color = "green";
+    if (chance === 0) {
+      playertwoerroe.innerHTML = "your predicton wrong try ageain";
+      playertwoerroe.style.color = "blue";
+    }
   } else {
-    error.style.display = "block";
-    error.innerHTML = `please insert value a 0 to 9 your have chance ${chance}`;
-    error.style.color = "red";
+    playertwoerroe.innerHTML = `please insert value a 0 to 9 your have chance ${chance}`;
+    playertwoerroe.style.color = "red";
   }
 });
